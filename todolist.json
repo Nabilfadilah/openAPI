@@ -75,8 +75,22 @@
                     "required": true,
                     "content": {
                         "application/json": {
-                            "schema": {},
-                            "examples": {}
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "required": true
+                                    },
+                                    "priority": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "required": true,
+                                        "default": 1
+                                    }
+                                }
+                            }
                         }
                     }
                 },
@@ -104,8 +118,22 @@
                     "required": true,
                         "content": {
                             "application/json": {
-                            "schema": {},
-                            "examples": {}
+                            "schema": {
+                                "type": "object",
+                                "properties": {
+                                    "name": {
+                                        "type": "string",
+                                        "minLength": 1,
+                                        "required": true
+                                    },
+                                    "priority": {
+                                        "type": "integer",
+                                        "format": "int32",
+                                        "default": 1,
+                                        "required": true
+                                    }
+                                }
+                            }
                         }
                     }
                 },
